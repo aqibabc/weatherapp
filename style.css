@@ -1,0 +1,183 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800;900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+}
+
+*::selection {
+    background-color: white;
+    color: #000;
+}
+
+body {
+    background-color: #222;
+}
+
+
+
+.card {
+    width: 90%;
+    max-width: 470px;
+    margin: 100px auto 0;
+    border-radius: 20px;
+    padding: 40px 35px;
+    text-align: center;
+    color: #fff;
+    background: linear-gradient(135deg, #00feba, #5b548a);
+}
+
+.search-box {
+    margin: 0 auto;
+    width: fit-content;
+    height: fit-content;
+    position: relative;
+}
+
+.input-search {
+    width: 150px;
+    border-style: none;
+    padding: 10px;
+    font-size: 18px;
+    letter-spacing: 2px;
+    outline: none;
+    border-radius: 25px;
+    transition: all .5s ease-in-out;
+    display: flex;
+    align-items: center;
+    color: #ffffff;
+}
+
+.input-search::placeholder {
+    display: none;
+    color: rgba(0, 0, 0, 0.5);
+    font-size: 18px;
+    letter-spacing: 2px;
+    font-weight: 100;
+}
+
+.btn-search {
+    width: 50px;
+    height: 50px;
+    border-style: none;
+    font-size: 20px;
+    font-weight: bold;
+    outline: none;
+    cursor: pointer;
+    border-radius: 40%;
+    position: absolute;
+    right: 0px;
+    color: #ffffff;
+    background-color: transparent;
+    pointer-events: painted;
+}
+
+.btn-search i {
+    position: absolute;
+    top: 12px;
+    right: 17px;
+    color: #000000;
+}
+
+.btn-search:focus~.input-search {
+    width: 300px;
+    border-radius: 0px;
+    background-color: transparent;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.5);
+    transition: all 500ms cubic-bezier(0, 0.110, 0.35, 2);
+}
+
+.input-search:focus {
+    width: 300px;
+    border-radius: 0px;
+    background-color: transparent;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.5);
+    transition: all 500ms cubic-bezier(0, 0.110, 0.35, 2);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.weather .weather-icon {
+    width: 170px;
+    margin-top: 30px;
+}
+
+
+.weather h1 {
+    font-size: 80px;
+    font-weight: 500;
+}
+
+.weather h2 {
+    font-size: 45px;
+    margin-top: -10px;
+    font-weight: 400;
+}
+
+.detailas {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 20px;
+    margin-top: 50px;
+}
+
+.col {
+    display: flex;
+    align-items: center;
+    text-align: left;
+}
+
+.col img {
+    width: 40px;
+    margin-right: 5px;
+}
+
+.humidity,
+.wind {
+    font-size: 28px;
+    margin-top: -10px;
+}
+
+
+
+
+
+
+@media  (max-width:425px) {
+
+    .input-search:focus {
+        width: 250px;
+        border-radius: 0px;
+        background-color: transparent;
+        border-bottom: 1px solid rgba(0, 0, 0, 0.5);
+        transition: all 500ms cubic-bezier(0, 0.110, 0.35, 2);
+    }
+
+  .detailas {
+   flex-direction: column;
+  }
+  .col{
+    margin: 20px 0;
+  }  
+}
